@@ -30,7 +30,7 @@ pipeline {
     }
     stage('Verify worker is deployed') {
       steps {
-        sh 'deno test'
+        sh 'deno test --allow-net'
       }
     }
   }
