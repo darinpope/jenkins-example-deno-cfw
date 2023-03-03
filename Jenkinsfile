@@ -3,6 +3,7 @@ pipeline {
   environment {
     CFW_ACCOUNT_ID=credentials('cfw-account-id')
     CFW_API_TOKEN=credentials('cfw-api-token')
+    NO_COLOR='true'
   }
   stages {
     stage('verify deno and denoflare') {
