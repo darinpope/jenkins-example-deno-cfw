@@ -5,7 +5,7 @@ const baseUrl = "https://main.planetpope.workers.dev/";
 
 Deno.test("Router: GET /", async () => {
   const res = await fetch(baseUrl);
-  assertEquals(res.status, 200);
   const html = await res.text();
+  assertEquals(res.status, 200);
   assertEquals(html,"Hello, world!");
 });
