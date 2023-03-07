@@ -1,5 +1,5 @@
 export default {
-  fetch(request: Request): Response {
+  fetch(_request: Request): Response {
     return new Response("Hello, world!");
   },
 };
