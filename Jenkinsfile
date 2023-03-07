@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Upload a Cloudflare worker script to Cloudflare') {
       steps {
-        sh 'denoflare push main.ts --account-id $CFW_ACCOUNT_ID --api-token $CFW_API_TOKEN'
+        sh 'denoflare push main.ts --account-id $CFW_ACCOUNT_ID --api-token $CFW_API_TOKEN --workers-dev'
       }
     }
     stage('Verify worker is deployed') {
